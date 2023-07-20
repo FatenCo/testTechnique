@@ -1,0 +1,17 @@
+<form class="row contact_form" #productForm="ngForm" (ngSubmit)="addOrEditProduct()">
+    <h1>ADD PRODUCT</h1>
+    <div class="col-md-6">
+        <div class="form-group">
+            <input type="text" class="form-control"[(ngModel)]="product.name"  name="name" placeholder="Product name">
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control"[(ngModel)]="product.price"  name="price" placeholder="Product price">
+        </div>
+        <div class="form-group">
+            <input type="number" class="form-control"[(ngModel)]="product.quantitya"  name="quantity" placeholder="Product quantity">
+        </div>
+    </div>
+    <div class="col-md-6 text-right" style="left: -200px; top: -20px;">
+        <button type="submit" value="submit" class="primary-btn" [value]="title"> add product</button>
+    </div>
+</form>
